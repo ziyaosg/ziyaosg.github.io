@@ -1,4 +1,4 @@
-/* latin-ext */
+/* latin-ext */  
 @font-face {
   font-family: 'Lato';
   font-style: italic;
@@ -64,7 +64,7 @@
 }
 
 a {
-  color: #7b29aa;
+  color: #71289c;
   text-decoration: none;
 }
 
@@ -81,7 +81,7 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 14px
 }
 
 strong {
@@ -89,22 +89,23 @@ strong {
   font-size: 14px;
 }
 
-h2 {
-  margin: 0;
-  font-weight: normal;
+heading {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 22px;
 }
 
-.papertitle {
+misc {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 18px;
 }
 
-.name {
-  padding-top: 20px;
-  margin: 0;
+papertitle {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700
+}
+
+name {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 32px;
 }
@@ -113,6 +114,10 @@ h2 {
   width: 160px;
   height: 160px;
   position: relative;
+  padding-top: 5px;
+  /* margin: auto;
+  width: 40%; */
+  /* display: inline; */
 }
 
 .two {
@@ -132,4 +137,14 @@ h2 {
 
 span.highlight {
   background-color: #ffffd0;
+}
+
+.side-image{
+  /* margin: auto;
+  display: block; */
+}
+
+body{
+  padding-left:10px;
+  padding-right:10px;
 }
