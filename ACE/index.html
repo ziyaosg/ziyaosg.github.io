@@ -39,6 +39,9 @@
 			</tr>
 		</tbody>
 	</table>
+	<div class="links">
+		<a href="https://arxiv.org/abs/2402.14528" class="btn"><i class="fa">&#xf1c1;</i>&ensp;Paper</a><a href="" class="btn"><i class="fa fa-github"></i>&ensp;Code (Coming soon)</a><a href="" class="btn"><i class="fa fa-cogs"></i>&ensp;Twitter</a>
+	</div>
 </div>
 <div class="content">
 	<div class="hr"></div>
@@ -53,7 +56,7 @@
 	</div>
 	<div class="hr"></div>
 	<div>
-		<h2>ACE Learns Diverse Tasks</h2>
+		<h2>ACE Handles Diverse Tasks</h2>
 		<div class="figure-caption">
 			<p>
 				We evaluate ACE across 29 diverse continuous control tasks spanning 7 task domains: 
@@ -104,6 +107,18 @@
 	</div>
 	<div class="hr"></div>
 	<div>
+		<h2>Motivating example</h2>
+		<div class="figure" style="height: 288px; background-image: url(images/5.png);"></div>
+		<div class="figure-caption">
+			This task involves a robotic arm hammering a screw into a wall.
+			Initially, the robotic arm approaches the desk moving on the z-axis and struggles with torque grasping, making <font color="#EA55B3">z-axis positioning</font> and <font color="#F4CE49">torque</font> exploration a priority.
+			As the training advances, the agent's focus shifts to optimizing movement, prioritizing end-effector position (<font color="#33BD3B">x-axis</font> and <font color="#4587E2">y-axis</font> improvement). 
+			Finally, potential improvements lie in the stable and swift hammering, shifting focus back to <font color="#F4CE49">torque</font> and <font color="#EA55B3">placing down</font> the object. 
+			The evolving causal weights, depicted on the left, reflect these changing priorities.
+		</div>
+	</div>
+	<div>
+	<div class="hr"></div>
 		<h2>Benchmarking</h2>
 		<div class="figure-caption">
 			<span class="bold red">Manipulation tasks.</span> We conducted experiments on
@@ -133,17 +148,24 @@
 		</div>
 		<div class="figure" style="height: 500px; background-image: url(images/sparsereward_6envs.png);"></div>
 	</div>
-	<div class="hr"></div>
-	<div>
-		<h2>Motivating example</h2>
-		<div class="figure" style="height: 288px; background-image: url(images/5.png);"></div>
-		<div class="figure-caption">
-			This task involves a robotic arm hammering a screw into a wall.
-			Initially, the robotic arm approaches the desk moving on the z-axis and struggles with torque grasping, making z-axis positioning and torque exploration a priority.
-			As the training advances, the agent's focus shifts to optimizing movement, prioritizing end-effector position (x-axis and y-axis improvement). 
-			Finally, potential improvements lie in the stable and swift hammering, shifting focus back to torque and placing down the object. 
-			The evolving causal weights, depicted on the left, reflect these changing priorities.
-		</div>
-	</div>
+<div class="hr"></div>
+<div style="padding-bottom: 64px; text-align: center;">
+	<h2>Citation</h2>
+	<div id="bibtex-text" class="bibtexsection" onClick="window.getSelection().selectAllChildren(document.getElementById('bibtex-text'));">
+@article{ji2024ace,
+	title={ACE: Off-Policy Actor-Critic with Causality-Aware Entropy Regularization},
+	author={Ji, Tianying and Liang, Yongyuan and Zeng, Yan and Luo, Yu and Xu, Guowei and Guo, 
+	Jiawei and Zheng, Ruijie and Huang, Furong and Sun, Fuchun and Xu, Huazhe},
+	journal={arXiv preprint arXiv:2402.14528},
+	year={2024}
+}
 </div>
+</div>
+</div>
+<footer>
+<a href="#top"><i class="fa fa-arrow-up"></i><br/>Return to top</a>
+<div style="padding-top: 48px;">
+<span>Website based on <a href="https://nicklashansen.github.io/td-mpc">TD-MPC</a>.</span>
+</div>
+</footer>
 
