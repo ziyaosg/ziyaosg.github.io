@@ -64,13 +64,13 @@
 }
 
 a {
-  color: #7334a7;
+  color: #00356b !important;
   text-decoration: none;
 }
 
 a:focus,
 a:hover {
-  color: #5b9edd;
+  color: #bd5319 !important;
   text-decoration: none;
 }
 
@@ -81,28 +81,46 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px
+  font-size: 16px
 }
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 heading {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 misc {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700
+}
+
+author {
+  color: #4a4a4a !important;
+  text-decoration: none;
+}
+
+/* author:focus, */
+author:hover {
+  /* color: #bd5319 !important; */
+  text-decoration: underline;
+}
+
+venue {
+  color: #b5294d !important;
+  font-weight: bold;
+  font-size: 16px;
+  font-style: italic;
 }
 
 name {
@@ -147,4 +165,9 @@ span.highlight {
 body{
   padding-left:10px;
   padding-right:10px;
+}
+
+.hl {
+  color: #bd5319;
+  font-size: 14px;
 }
