@@ -64,13 +64,14 @@
 }
 
 a {
-  color: #00356b !important;
+  color: #00365b !important;
   text-decoration: none;
 }
 
 a:focus,
 a:hover {
-  color: #bd5319 !important;
+  /* color: #bd5319 !important; */
+  color: #8B139C !important;
   text-decoration: none;
 }
 
@@ -117,7 +118,7 @@ author:hover {
 }
 
 venue {
-  color: #b5294d !important;
+  color: #8C1515 !important;
   font-weight: bold;
   font-size: 16px;
   font-style: italic;
